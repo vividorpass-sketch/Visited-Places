@@ -44,7 +44,7 @@ input, textarea {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    transition:border-color 0.3s ease;
+    
 }
 
 .btn {
@@ -56,15 +56,15 @@ input, textarea {
      font-weight: bold;
      cursor: pointer;
      width: 100%;
-     transition: transform 0.2s, background 0.3s;
+    
 }
 
 #place-list li:hover {
     background: #d1ecf1;
-    transform: scale(1.02);
+    
 }
 
-/* Details section (The Journal Card) */
+
 .details-card {
     background-color: var(--yellow);
     padding: 30px;
@@ -96,6 +96,7 @@ hr {
 .hidden {
   display: none;
 }
+
 
 
 
