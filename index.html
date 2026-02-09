@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places You've Been.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+            <h1>Places You've Been</h1>
+            <hr>
+
+            <div class = "row">
+                <div class = "column">
+                    <h2>Add a new trip</h2>
+                    <form id="new-place-form">
+                        <div class = "form-group">
+                            <label for="new-location">Location:</label>
+                            <input type="text" id = "new-location" required>
+                        </div>
+                        <div class = "form-group">
+                            <label for="new-landmarks">landmarks:</label>
+                            <input type="text" id = "new-landmarks">
+                        </div>
+                        <div class = "form-group">
+                            <label for="new-time">Time of Year:</label>
+                            <input type="text" id = "new-time">
+                        </div>
+                        <div class = "form-group">
+                            <label for="new-notes">Notes:</label>
+                            <textarea id="new-notes"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Save Destination</button>
+                    </form>
+                    <hr>
+                    <h2>Visited locations</h2>
+                    <ul id = "place-list"></ul>
+                </div>
+                <div class = "column" id = "details-section">
+                    <div id="places-details" class = "hidden">
+                        <h2>Trip Details</h2>
+                        <p><strong>Location:</strong>
+                        <span class = "show-location"></span></p>
+                        <p><strong>Landmarks:</strong>
+                        <span class = "show-landmarks"></span></p>
+                        <p><strong>Time of Year:</strong>
+                        <span class = "show-time"></span></p>
+                        <p><strong>Notes:</strong>
+                            <span class = "show-notes"></span></p>
+                    </div>
+                    <div class="column" id="details">
+                      <div id="place-details" class="trip-card hidden">
+                         <h2>Trip Details</h2>
+        <p><strong>Location:</strong>
+        <span class="show-location"></span></p>
+
+        <p><strong>Landmarks:</strong>
+        <span class="show-landmarks"></span></p>
+
+        <p><strong>Time of Year:</strong>
+        <span class="show-time"></span></p>
+
+        <p><strong>What happened:</strong>
+        <span class="show-notes"></span></p>
+    </div>
+</div>
+
+                </div>
+            </div>
+         </div>
+         <script src="script.js"></script>
+</body>
+</html>
